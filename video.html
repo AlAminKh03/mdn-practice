@@ -9,7 +9,7 @@
   <body>
     <video id="video" controls preload="metadata" width="500" height="400">
       <source src="videos/video.mp4" type="video/mp4" />
-      <source src="video/sintel-short.webm" type="video/webm" />
+      <source src="videos/video.ogg" type="video/webm" />
       <track
         label="English"
         kind="subtitles"
@@ -46,12 +46,6 @@
       </button>
       <button id="subtitles" type="button" data-state="subtitles">CC</button>
     </div>
-
-    <script>
-      const subtitlesButton = document.getElementById("subtitles");
-      for (let i = 0; i < video.textTracks.length; i++) {
-        video.textTracks[i].mode = "hidden";
-      }
-    </script>
+    <script src="script/video.js"></script>
   </body>
 </html>
